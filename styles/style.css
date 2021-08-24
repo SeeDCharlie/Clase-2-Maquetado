@@ -26,6 +26,15 @@ header {
   grid-auto-rows: minmax(100px, auto);
   box-shadow: 10px 10px 8px #888888;
 }
+.menuoptions, .menubuttons{
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
 #fakeHeader {
   height: 75px;
   position: fixed;
