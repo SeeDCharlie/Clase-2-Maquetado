@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 header,
 #fakeHeader {
   position: relative;
@@ -18,8 +20,12 @@ header,
 
 header {
   z-index: 1987;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  box-shadow: 10px 10px 8px #888888;
 }
-
 #fakeHeader {
   height: 75px;
   position: fixed;
@@ -27,6 +33,7 @@ header {
   opacity: 0;
   transition: all 1s ease;
   z-index: 1986;
+  box-shadow: 8px 8px 6px rgba(5,5,6,0.5);
 }
 
 #searchBar,
